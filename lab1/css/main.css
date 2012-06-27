@@ -1,0 +1,164 @@
+
+/*--------------- =Reset ---------------------*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*--------------- =Main ---------------------*/
+
+body{
+	background: url("http://subtlepatterns.com/patterns/lightpaperfibers.png") repeat;
+	margin: 0;
+	font-size: 62.5%;
+}
+
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	-webkit-box-shadow:  0px 0px 10px 5px #e8e8e8;
+	-moz-box-shadow:  0px 0px 10px 5px #e8e8e8;
+    box-shadow:  0px 0px 10px 5px #e8e8e8;
+    background: #FBFAF9;
+    position: relative;
+}
+
+#main_content{
+	padding: 0 20px;
+}
+
+
+/*--------------- =Headers & Paragraphs ---------------------*/
+
+h1{
+	font: 4em "Helvetica", sans-serif;
+	line-height: 1.1;
+	color: #2f2e2e;
+	clear: left;
+}
+
+h2{
+	font: 2.5em "Helvetica", sans-serif;
+	line-height: 1.1;
+	border-bottom: 2px dashed #dedede;
+	margin-top: 20px;
+	color: #2f2e2e;
+}
+
+h3{
+	font: 1.7em "Helvetica", sans-serif;
+	line-height: 1.1;
+	font-weight: bolder;
+	color: #2f2e2e;
+}
+
+p{
+	font: 1.2em "Helvetica", sans-serif;
+	clear: left;
+	line-height: 1.5;
+	color: #403f3f;
+}
+
+#text p:first-child{
+	padding-top: 30px;
+}
+
+#text p{
+	margin-bottom: 10px;
+	text-align: justify; 
+}
+
+
+/*--------------- =Images ---------------------*/
+
+#logo{
+	text-align: center;
+	margin: 20px 0;
+	padding-top: 10px;
+}
+
+/*--------------- =Main Content ---------------------*/
+
+#title{
+	float: left;
+	width: 460px;
+}
+
+#name{
+	float: left;
+	width: 460px;
+	text-align: right;
+}
+
+#name p{
+	font-weight: bolder;
+}
+
+#header{
+	margin-bottom: 20px;
+}
+
+#justpuppies{
+	float: left;
+	width: 440px;
+	padding: 0 10px;
+	margin-top: 15px;
+}
+
+#airportpets{
+	float: left;
+	width: 440px;
+	padding: 0 10px;
+	margin-top: 15px;
+}
+
+#target p{
+	padding-top: 10px;
+}
