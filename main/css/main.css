@@ -8,7 +8,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+/* fieldset */ form, label, /* legend */,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -53,6 +53,7 @@ body{
 }
 
 #wrapper{
+	background-color: #ffffff;
 	max-width: 960px;
 	margin: 0 auto;
 	-webkit-box-shadow:  0 0 10px 5px #a6a6a6;
@@ -112,10 +113,6 @@ h2{
 p{
 	font-size: 1.5em;
 }
-
-
-
-
 /*--------------- =Banner ---------------------*/
 
 #banner{
@@ -174,8 +171,6 @@ footer{
 	width: 100%;
 }
 
-
-
 /* --------------------------- Media Queries ----------------------*/
 
 @media screen and (max-width: 960px){
@@ -190,7 +185,11 @@ footer{
 	#wrapper{
 		width: 100%;
 	}
+}
 
-@media screen and (max-width: 480px{
-	
+@media screen and (max-width: 480px){
+
+	#wrapper{
+		width: 100%;
+	}
 }
