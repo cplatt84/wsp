@@ -32,18 +32,6 @@ body {
 ol, ul {
 	list-style: none;
 }
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
 
 
 /* -----------------=HTML------------ */
@@ -56,8 +44,6 @@ html{
 
 body{
 	background: url("../img/paws.png") repeat-x;
-	background-color: #ffffff;
-	margin: 0;
 	font-size: 62.5%;
 }
 
@@ -69,43 +55,41 @@ body{
 #wrapper{
 	max-width: 960px;
 	margin: 0 auto;
-	-webkit-box-shadow:  0px 0px 10px 5px #a6a6a6;
-	-moz-box-shadow:  0px 0px 10px 5px #a6a6a6;
-    box-shadow:  0px 0px 10px 5px #a6a6a6;
-    background: white;
+	-webkit-box-shadow:  0 0 10px 5px #a6a6a6;
+	-moz-box-shadow:  0 0 10px 5px #a6a6a6;
+    box-shadow:  0 0 10px 5px #a6a6a6;
 }
 
 
 /*--------------- =Navigation ---------------------*/
 
-#nav {
+nav {
 	overflow: hidden;
 	background: #00207e;
-	left: 0;
 	width: 100%;
 	clear: both;
 }
 
-#nav li {
+nav li {
 	list-style: none;
 	float: left;
 	margin-left: 4.1666667%;
 }
 
-#nav li a{
+nav li a{
 	color: #ffffff;
-	font: 1.5em/1.1 "Helvetica", sans-serif;
+	font: 1.5em "Helvetica", sans-serif;
 	text-decoration: none;
 	display: block;
 	line-height: 1.6em;
 }
 
-#nav li a:hover{
+nav li a:hover{
 	color: #a2a2a2;
 }
 
-#nav ul{
-	margin: 0 0 0 50px;
+nav ul{
+	margin-left: 50px;
 }
 
 
@@ -135,7 +119,6 @@ p{
 /*--------------- =Banner ---------------------*/
 
 #banner{
-	background: #ffffff;
 	padding: 10px 2.0833333%;
 }
 
@@ -161,7 +144,7 @@ p{
 	width: 400px;
 	float: left;
 }
-
+s
 #about_us p{
 	float: left;
 }
@@ -183,9 +166,9 @@ li{
 
 /*--------------- =Footer ---------------------*/
 
-#footer{
+footer{
 	background: #00207d;
-	color: white;
+	color: #ffffff;
 	text-align: center;
 	padding: 2px 0;
 	width: 100%;
@@ -197,14 +180,17 @@ li{
 
 @media screen and (max-width: 960px){
 
-#wrapper{
-	width: 100%;
+	#wrapper{
+		width: 100%;
+		}
 }
 
 @media screen and (max-width: 600px){
 
-#wrapper{
-	width: 100%;
-}
+	#wrapper{
+		width: 100%;
+	}
 
-@media screen and (max-width: 480px) /* I was instructed by Mark & Chelsea to go with 480px instead of 320px because my text would not wrap below 480. */{
+@media screen and (max-width: 480px{
+	
+}
