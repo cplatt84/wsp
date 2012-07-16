@@ -1,0 +1,210 @@
+
+/*--------------- =Reset ---------------------*/
+
+html, body, div, span, applet, object, iframe,
+blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* -----------------=HTML------------ */
+
+html{
+	font-size: 16px;
+}
+
+/*--------------- =Main ---------------------*/
+
+body{
+	background: url("../img/paws.png") repeat-x;
+	background-color: #ffffff;
+	margin: 0;
+	font-size: 62.5%;
+}
+
+#main-content {
+	background: #f0eaec;
+	padding: 20px 02.0833333%; /* 20 / 960 */
+}
+
+#wrapper{
+	max-width: 960px;
+	margin: 0 auto;
+	-webkit-box-shadow:  0px 0px 10px 5px #a6a6a6;
+	-moz-box-shadow:  0px 0px 10px 5px #a6a6a6;
+    box-shadow:  0px 0px 10px 5px #a6a6a6;
+    background: white;
+}
+
+
+/*--------------- =Navigation ---------------------*/
+
+#nav {
+	overflow: hidden;
+	background: #00207e;
+	left: 0;
+	width: 100%;
+	clear: both;
+}
+
+#nav li {
+	list-style: none;
+	float: left;
+	margin-left: 4.1666667%;
+}
+
+#nav li a{
+	color: #ffffff;
+	font: 1.5em/1.1 "Helvetica", sans-serif;
+	text-decoration: none;
+	display: block;
+	line-height: 1.6em;
+}
+
+#nav li a:hover{
+	color: #a2a2a2;
+}
+
+#nav ul{
+	margin: 0 0 0 50px;
+}
+
+
+
+/*--------------- =Headers ---------------------*/
+
+h1, h2, h3{
+	color: #333234;
+	font-family: 'Fredoka One', cursive;
+}
+
+h1{
+	font-size: 2.4em;
+}
+
+h2{
+	font-size: 2.2em;
+}
+
+p{
+	font-size: 1.5em;
+}
+
+
+
+
+/*--------------- =Banner ---------------------*/
+
+#banner{
+	background: #ffffff;
+	padding: 10px 2.0833333%;
+}
+
+#banner_img{
+	width:99px;
+	float: left;
+}
+
+#logo{
+	width: 155px;
+	float: left;
+	margin-top: 50px;
+}
+
+#social_media{
+	float: right;
+}
+
+/*--------------- =About Us ---------------------*/
+
+#about_us img{
+	border: 2px solid #555f7d;
+	width: 400px;
+	float: left;
+}
+
+#about_us p{
+	float: left;
+}
+
+
+/*--------------- =Request ---------------------*/
+
+#form{
+	clear: left;
+}
+
+
+/*--------------- =List ---------------------*/
+
+li{
+	font-size: 1.6em;
+}
+
+
+/*--------------- =Footer ---------------------*/
+
+#footer{
+	background: #00207d;
+	color: white;
+	text-align: center;
+	padding: 2px 0;
+	width: 100%;
+}
+
+
+
+/* --------------------------- Media Queries ----------------------*/
+
+@media screen and (max-width: 960px){
+
+#wrapper{
+	width: 100%;
+}
+
+@media screen and (max-width: 600px){
+
+#wrapper{
+	width: 100%;
+}
+
+@media screen and (max-width: 480px) /* I was instructed by Mark & Chelsea to go with 480px instead of 320px because my text would not wrap below 480. */{
