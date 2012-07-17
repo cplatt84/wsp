@@ -7,13 +7,12 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
-/* fieldset */ form, label, /* legend */,
+dl, dt, dd, ol, ul, li, form, label,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -47,9 +46,10 @@ body{
 	font-size: 62.5%;
 }
 
-#main-content {
+#main_content {
 	background: #f0eaec;
-	padding: 20px 02.0833333%; /* 20 / 960 */
+	padding: 10px 9px; /* 9 / 960 */
+	overflow: hidden;
 }
 
 #wrapper{
@@ -62,57 +62,6 @@ body{
 }
 
 
-/*--------------- =Navigation ---------------------*/
-
-nav {
-	overflow: hidden;
-	background: #00207e;
-	width: 100%;
-	clear: both;
-}
-
-nav li {
-	list-style: none;
-	float: left;
-	margin-left: 4.1666667%;
-}
-
-nav li a{
-	color: #ffffff;
-	font: 1.5em "Helvetica", sans-serif;
-	text-decoration: none;
-	display: block;
-	line-height: 1.6em;
-}
-
-nav li a:hover{
-	color: #a2a2a2;
-}
-
-nav ul{
-	margin-left: 50px;
-}
-
-
-
-/*--------------- =Headers ---------------------*/
-
-h1, h2, h3{
-	color: #333234;
-	font-family: 'Fredoka One', cursive;
-}
-
-h1{
-	font-size: 2.4em;
-}
-
-h2{
-	font-size: 2.2em;
-}
-
-p{
-	font-size: 1.5em;
-}
 /*--------------- =Banner ---------------------*/
 
 #banner{
@@ -120,7 +69,7 @@ p{
 }
 
 #banner_img{
-	width:99px;
+	width: 99px;
 	float: left;
 }
 
@@ -134,8 +83,125 @@ p{
 	float: right;
 }
 
+/*--------------- =Navigation ---------------------*/
+
+nav {
+	overflow: hidden;
+	background: #00207e;
+	width: 100%;
+	clear: both;
+}
+
+nav li {
+	list-style: none;
+	float: left;
+	margin-left: 35px; /* 4.1666667% */
+}
+
+nav li a{
+	color: #ffffff;
+	font: 1.5em "Helvetica Neue", sans-serif;
+	text-decoration: none;
+	display: block;
+	line-height: 1.5em;
+}
+
+nav li a:hover{
+	color: #c3c3c3;
+}
+
+
+
+
+/*--------------- =Global ---------------------*/
+
+h1, h2 {
+	color: #333234;
+	font-family: 'Fredoka One', cursive;
+}
+
+h3 {
+	color: #ffffff;
+	font-size: 1.8em;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+p, a {
+	font: 1.2em "Helvetica Neue", sans-serif;
+	line-height: 1.5em;
+}
+
+
+/*--------------- =Home Page ---------------------*/
+
+#carousel img{
+	width: 100%;
+}
+
+#mission{
+	background-color: #555f7d;
+	text-align: center;
+	color: #ffffff;
+}
+
+#mini_featured{
+	width: 320px; /* 36.5625% */ 
+	float: left;
+}
+
+#mini_featured img{
+	width: 153px;
+	clear: left;
+}
+
+#mini_featured h1, #view_all{
+	float: left;
+}
+
+#coonhound, #chiweenie{
+	width: 155px;
+	float: left;
+}
+
+#mini_about_us{
+	width: 622px;
+	float: left;
+}
+
+#mini_about_us p{
+	float:left;
+}
+
+#store_front{
+	width: 189px;
+	float: left;
+}
+
+#address ul{
+	width: 155px;
+	float: left;
+}
+
+#certificates{
+	width: 205px;
+	float: left;
+}
+
+#certificates li{
+	width: 77px;
+	float: left;
+}
+
 /*--------------- =About Us ---------------------*/
 
+/*
 #about_us img{
 	border: 2px solid #555f7d;
 	width: 400px;
@@ -146,19 +212,53 @@ s
 	float: left;
 }
 
-
-/*--------------- =Request ---------------------*/
-
 #form{
 	clear: left;
 }
+*/
 
+/*--------------- =Puppy Gallery ---------------------*/
 
-/*--------------- =List ---------------------*/
-
-li{
-	font-size: 1.6em;
+/*
+#featured li, #more_puppies li{
+	position: relative;
+	float: left;
+	width: 200px;
 }
+
+.detailed{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(51, 51, 51, .8);
+}
+
+#featured .detailed{
+	background-color: rgba(0, 32, 125, .8);
+}
+
+#more_puppies{
+	clear: left;
+}
+
+#main_content{
+	overflow: hidden;
+}
+
+#pagination{
+	clear: both;	
+}
+
+#pagination ul{
+	width: 30%;
+	margin: 0 auto;
+}
+
+#pagination li{
+	float: left;
+	margin-right: 40px;
+}
+*/
 
 
 /*--------------- =Footer ---------------------*/
@@ -169,6 +269,7 @@ footer{
 	text-align: center;
 	padding: 2px 0;
 	width: 100%;
+	clear: both;
 }
 
 /* --------------------------- Media Queries ----------------------*/
