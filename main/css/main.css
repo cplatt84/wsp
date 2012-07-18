@@ -7,8 +7,7 @@ a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
-/* fieldset */ form, label, /* legend */,
+dl, dt, dd, ol, ul, li, form, label,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
@@ -33,6 +32,11 @@ ol, ul {
 	list-style: none;
 }
 
+h1, h2, h3 {
+	margin:0;
+	padding:0;
+}
+
 
 /* -----------------=HTML------------ */
 
@@ -47,9 +51,10 @@ body{
 	font-size: 62.5%;
 }
 
-#main-content {
+#main_content {
 	background: #f0eaec;
-	padding: 20px 02.0833333%; /* 20 / 960 */
+	padding: 10px 9px; /* 9 / 960 */
+	overflow: hidden;
 }
 
 #wrapper{
@@ -62,57 +67,6 @@ body{
 }
 
 
-/*--------------- =Navigation ---------------------*/
-
-nav {
-	overflow: hidden;
-	background: #00207e;
-	width: 100%;
-	clear: both;
-}
-
-nav li {
-	list-style: none;
-	float: left;
-	margin-left: 4.1666667%;
-}
-
-nav li a{
-	color: #ffffff;
-	font: 1.5em "Helvetica", sans-serif;
-	text-decoration: none;
-	display: block;
-	line-height: 1.6em;
-}
-
-nav li a:hover{
-	color: #a2a2a2;
-}
-
-nav ul{
-	margin-left: 50px;
-}
-
-
-
-/*--------------- =Headers ---------------------*/
-
-h1, h2, h3{
-	color: #333234;
-	font-family: 'Fredoka One', cursive;
-}
-
-h1{
-	font-size: 2.4em;
-}
-
-h2{
-	font-size: 2.2em;
-}
-
-p{
-	font-size: 1.5em;
-}
 /*--------------- =Banner ---------------------*/
 
 #banner{
@@ -120,7 +74,7 @@ p{
 }
 
 #banner_img{
-	width:99px;
+	width: 99px;
 	float: left;
 }
 
@@ -134,31 +88,389 @@ p{
 	float: right;
 }
 
+/*--------------- =Navigation ---------------------*/
+
+nav {
+	overflow: hidden;
+	background: #00207e;
+	width: 100%;
+	clear: both;
+}
+
+nav li {
+	list-style: none;
+	float: left;
+}
+
+/*
+nav a{
+	color: #ffffff;
+	font: 1.5em "Helvetica Neue", sans-serif;
+	text-decoration: none;
+	display: block;
+	line-height: 1.5em;
+}
+*/
+
+nav a{
+	height: 61px;
+	width: 166px;
+	display: block;
+	background: url(../img/nav_bg.jpg) no-repeat 0 0;
+	text-indent: -999999px;
+}
+
+
+nav li a:hover{
+	color: #c3c3c3;
+}
+
+/*------------------------------ Our Puppies Button */
+
+#our_puppies_link a{
+	background-position: 0 0; 
+}
+
+#our_puppies_link a:hover{
+	background-position: 0px -63px; 
+}
+
+#our_puppies_link a:active{
+	background-position: 0px -126px; 
+}
+
+/*------------------------------ Our Guarantee Button */
+#our_guarantee_link a{
+	background-position: -166px 0; 
+}
+
+#our_guarantee_link a:hover{
+	background-position: -166px -63px; 
+}
+
+#our_guarantee_link a:active{
+	background-position: -166px -126px; 
+}
+
+/*------------------------------ Puppy Health Button */
+#puppy_health_link a{
+	background-position: -332px 0; 
+}
+
+#puppy_health_link a:hover{
+	background-position: -332px -63px; 
+}
+
+#puppy_health_link a:active{
+	background-position: -332px -126px; 
+}
+
+
+/*------------------------------ Client Photos Button */
+#client_photos_link a{
+	background-position: -498px 0; 
+}
+
+#client_photos_link a:hover{
+	background-position: -498px -63px; 
+}
+
+#client_photos_link a:active{
+	background-position: -498px -126px; 
+}
+
+
+/*------------------------------ About Us Button */
+#about_us_link a{
+	background-position: -664px 0; 
+}
+
+#about_us_link a:hover{
+	background-position: -664px -63px; 
+}
+
+#about_us_link a:active{
+	background-position: -664px -126px; 
+}
+
+
+
+/*--------------- =Global ---------------------*/
+
+h1, h2 {
+	color: #333234;
+	font-family: 'Fredoka One', cursive;
+	margin: 10px 0;
+}
+
+h3 {
+	color: #ffffff;
+	font-size: 1.8em;
+}
+
+h1 {
+	font-size: 2.4em;
+}
+
+h2 {
+	font-size: 2.2em;
+}
+
+p, a {
+	font: 1.2em "Helvetica Neue", sans-serif;
+	line-height: 1.5em;
+}
+
+a{
+	color: #00207d;
+}
+
+a:hover{
+	color: #878579;
+}
+
+a:active{
+	color: #debd5f;
+}
+
+li{
+	font: 1.2em "Helvetica Neue", sans-serif;
+}
+
+/*--------------- =Banner ---------------------*/
+
+
+
+/*--------------- =Home Page ---------------------*/
+
+#carousel img {
+	width: 100%;
+}
+
+#mission{
+	background-color: #555f7d;
+	text-align: center;
+	color: #ffffff;
+}
+
+#mini_featured{
+	width: 320px; /* 36.5625% */ 
+	float: left;
+}
+
+#mini_featured ul{
+	display:inline
+}
+
+#view_all{
+	margin: 15px 0 0 45px;
+}
+
+#mini_featured img{
+	width: 153px;
+	clear: left;
+	border: 2px solid #555f7d;
+}
+
+
+#mini_featured img:hover{
+	border: 2px solid #8899cb;
+}
+
+#mini_featured h1, #view_all{
+	float: left;
+}
+
+#coonhound, #chiweenie{
+	width: 145px;
+	float: left;
+	margin-right: 15px;
+}
+
+
+#mini_about_us{
+	width: 600px;
+	float: left;
+	margin-left: 20px;
+}
+
+#mini_about_us p{
+	float:left;
+}
+
+#store_front{
+	float: left;
+	border: 2px solid #555f7d;
+}
+
+#address ul{
+	float: left;
+	width: 390px;
+	margin-left: 11px;
+}
+
+#certificates{
+	float: left;
+	margin: 20px 0 0 11px;
+}
+
+#certificates li{
+	width: 77px;
+	float: left;
+	margin-right: 20px; 
+}
+
+#address li:nth-child(1){
+	font-weight: bolder;
+}
+
+#certificates li:nth-child(3){
+	margin-top: 30px;
+}
 /*--------------- =About Us ---------------------*/
+
+#about_us{
+	background-color: #e5dfe1;
+	border: 2px solid #bcb7b9;
+	padding: 0 7px;
+}
+
 
 #about_us img{
 	border: 2px solid #555f7d;
-	width: 400px;
 	float: left;
-}
-s
-#about_us p{
-	float: left;
+	width: 301px;
+	margin-right: 15px;
 }
 
+#request{
+	clear: left;
+	width: 310px;
+	float: left;
+}
 
-/*--------------- =Request ---------------------*/
+form{
+	background: -webkit-linear-gradient(#ddd7d9 12.25%, #e5dfe1 100%);
+	background: -moz-linear-gradient(#d8d5df 42.72%, #d8d5df 100%);
+	line-height: 24px;
+	font: italic bold 1.2em "Helvetica Neue", sans-serif;
+	color: #555f7d;
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	border: 1px solid #9f9f9f;
+}
 
-#form{
+form li{
+	margin-bottom: 5px;
+}
+
+button.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #050505;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#ffffff 0%,
+		#ebebeb 50%,
+		#dbdbdb 50%,
+		#b5b5b5);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#ffffff),
+		color-stop(0.50, #ebebeb),
+		color-stop(0.50, #dbdbdb),
+		to(#b5b5b5));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #949494;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 2px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,1);
+}
+
+#location{
+	width: 600px;
+	float: left;
+	margin-left: 30px;
+}
+
+#location ul{
+	float: left;
+}
+
+#location img{
+	float: left;
+	width: 424px;
+	border: 2px solid #555f7d;
+	margin-left: 20px;
+}
+
+#location li:nth-child(1){
+	font-weight: bolder;
+}
+
+#location li:nth-child(6){
+	margin-top: 10px;
+}
+
+
+
+/*--------------- =Puppy Gallery ---------------------*/
+
+/*
+#featured li, #more_puppies li{
+	position: relative;
+	float: left;
+	width: 200px;
+}
+
+.detailed{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: rgba(51, 51, 51, .8);
+}
+
+#featured .detailed{
+	background-color: rgba(0, 32, 125, .8);
+}
+
+#more_puppies{
 	clear: left;
 }
 
-
-/*--------------- =List ---------------------*/
-
-li{
-	font-size: 1.6em;
+#main_content{
+	overflow: hidden;
 }
+
+#pagination{
+	clear: both;	
+}
+
+#pagination ul{
+	width: 30%;
+	margin: 0 auto;
+}
+
+#pagination li{
+	float: left;
+	margin-right: 40px;
+}
+*/
 
 
 /*--------------- =Footer ---------------------*/
@@ -169,9 +481,10 @@ footer{
 	text-align: center;
 	padding: 2px 0;
 	width: 100%;
+	clear: both;
 }
 
-/* --------------------------- Media Queries ----------------------*/
+/* ------------- Media Queries ---------------*/
 
 @media screen and (max-width: 960px){
 
