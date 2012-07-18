@@ -92,7 +92,8 @@ body{
 
 nav {
 	overflow: hidden;
-	background: #00207e;
+	/* background: #00207e; */
+	background: #23347a;
 	width: 100%;
 	clear: both;
 }
@@ -116,7 +117,7 @@ nav a{
 	height: 61px;
 	width: 166px;
 	display: block;
-	background: url(../img/nav_bg.jpg) no-repeat 0 0;
+	background: url(../img/nav2.png) no-repeat 0 0;
 	text-indent: -999999px;
 }
 
