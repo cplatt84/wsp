@@ -149,12 +149,13 @@ nav li a:hover{
 
 #lower_nav a {
 	color: #ffffff;
-	text-decoration: none;
 }
 
+/*
 #lower_nav a:hover {
 	text-decoration: underline;
 }
+*/
 
 /*------------------------------ Our Puppies Button */
 
@@ -254,10 +255,12 @@ p, a {
 
 a{
 	color: #00207d;
+	text-decoration: none;
 }
 
 a:hover{
 	color: #878579;
+	text-decoration: underline;
 }
 
 a:active{
@@ -318,12 +321,13 @@ li{
 	margin-right: 15px;
 }
 
+/*
 #coonhound a, #chiweenie a {
 	text-decoration: none;
 }
+*/
 
 #coonhound a:hover, #chiweenie a:hover {
-	text-decoration: underline;
 	color: #00207d;
 }
 
