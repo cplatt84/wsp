@@ -2,11 +2,11 @@
 /*--------------- =Reset ---------------------*/
 
 html, body, div, span, applet, object, iframe,
-blockquote, pre,
+blockquote, pre, h1, h2, h3, h4,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
+b, u, i, center, p,
 dl, dt, dd, ol, ul, li, form, label,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
@@ -58,7 +58,7 @@ body{
 }
 
 #wrapper{
-	background-color: #ffffff;
+	background-color: #e7e7e7;
 	max-width: 960px;
 	margin: 0 auto;
 	-webkit-box-shadow:  0 0 10px 5px #a6a6a6;
@@ -71,6 +71,8 @@ body{
 
 #banner{
 	padding: 10px 2.0833333%;
+	background: url("http://subtlepatterns.com/patterns/lightpaperfibers.png");
+	overflow: hidden;
 }
 
 #banner_img{
@@ -88,6 +90,9 @@ body{
 	float: right;
 }
 
+#social_media a:hover{
+	border-bottom: 1px inset #555f7d;
+}
 /*--------------- =Navigation ---------------------*/
 
 nav {
@@ -95,12 +100,21 @@ nav {
 	/* background: #00207e; */
 	background: #23347a;
 	width: 100%;
+	height: 61px;
 	clear: both;
 }
 
 nav li {
 	list-style: none;
 	float: left;
+}
+
+nav a{
+	height: 61px;
+	width: 192px; /* 20% */
+	display: block;
+	background: url(../img/nav.png) no-repeat 0 0;
+	text-indent: -999999px;
 }
 
 /*
@@ -113,23 +127,10 @@ nav a{
 }
 */
 
-nav a{
-	height: 61px;
-	width: 166px;
-	display: block;
-	background: url(../img/nav2.png) no-repeat 0 0;
-	text-indent: -999999px;
-}
-
-
-nav li a:hover{
-	color: #ffffff;
-}
-
-
 #lower_nav{
 	margin: 0 auto;
-	width: 450px;
+	width: 46.875%; /* 450px */
+	padding: 10px 0;
 }
 
 #lower_nav ul {
@@ -138,7 +139,7 @@ nav li a:hover{
 
 #lower_nav li {
 	float: left;
-	padding: 0 10px;
+	padding: 0 10px;  /* 01.0416667% */
 	border-right: 1px solid #ffffff;
 	font-size: 1.0em;
 }
@@ -151,12 +152,6 @@ nav li a:hover{
 	color: #ffffff;
 }
 
-/*
-#lower_nav a:hover {
-	text-decoration: underline;
-}
-*/
-
 /*------------------------------ Our Puppies Button */
 
 #our_puppies_link a{
@@ -164,68 +159,84 @@ nav li a:hover{
 }
 
 #our_puppies_link a:hover{
-	background-position: 0px -63px; 
+	background-position: 0px -61px; 
 }
 
 #our_puppies_link a:active{
-	background-position: 0px -126px; 
+	background-position: 0px -122px; 
+}
+
+#active_puppies a{
+	background-position: 0px -183px; 
 }
 
 /*------------------------------ Our Guarantee Button */
 #our_guarantee_link a{
-	background-position: -166px 0; 
+	background-position: -192px 0; 
 }
 
 #our_guarantee_link a:hover{
-	background-position: -166px -63px; 
+	background-position: -192px -61px; 
 }
 
 #our_guarantee_link a:active{
-	background-position: -166px -126px; 
+	background-position: -192px -122px; 
+}
+
+#active_guarantee a{
+	background-position: -192px -183px; 
 }
 
 /*------------------------------ Puppy Health Button */
 #puppy_health_link a{
-	background-position: -332px 0; 
+	background-position: -384px 0; 
 }
 
 #puppy_health_link a:hover{
-	background-position: -332px -63px; 
+	background-position: -384px -61px; 
 }
 
 #puppy_health_link a:active{
-	background-position: -332px -126px; 
+	background-position: -384px -122px; 
 }
 
+#active_vet a{
+	background-position: -384px -183px; 
+}
 
 /*------------------------------ Client Photos Button */
 #client_photos_link a{
-	background-position: -498px 0; 
+	background-position: -576px 0; 
 }
 
 #client_photos_link a:hover{
-	background-position: -498px -63px; 
+	background-position: -576px -61px; 
 }
 
 #client_photos_link a:active{
-	background-position: -498px -126px; 
+	background-position: -576px -122px; 
 }
 
+#active_gallery a{
+	background-position: -576px -183px; 
+}
 
 /*------------------------------ About Us Button */
 #about_us_link a{
-	background-position: -664px 0; 
+	background-position: -768px 0; 
 }
 
 #about_us_link a:hover{
-	background-position: -664px -63px; 
+	background-position: -768px -61px; 
 }
 
 #about_us_link a:active{
-	background-position: -664px -126px; 
+	background-position: -768px -122px; 
 }
 
-
+#active_about_us a{
+	background-position: -768px -183px; 
+}
 
 /*--------------- =Global ---------------------*/
 
@@ -235,17 +246,23 @@ h1, h2 {
 	margin: 10px 0;
 }
 
-h3 {
-	color: #ffffff;
-	font-size: 1.8em;
-}
-
 h1 {
 	font-size: 2.4em;
 }
 
 h2 {
 	font-size: 2.2em;
+}
+
+h3 {
+	color: #ffffff;
+	font-size: 1.8em;
+}
+
+h4{
+	font-size: 1.5em;
+	padding-bottom: 5px;
+	font-weight: bolder;
 }
 
 p, a {
@@ -281,6 +298,27 @@ li{
 	width: 100%;
 }
 
+/*
+#carousel {
+        width: 480px;
+        overflow:hidden;
+    }
+
+#carousel ul {
+        width: 1920px;
+        padding: 0;
+        margin: 0;
+    }
+
+#carousel ul li {
+        width:480px;
+        text-align: center;
+        height: 280px;
+        list-style: none;
+        float:  left;
+    }
+*/
+
 #mission{
 	background-color: #555f7d;
 	text-align: center;
@@ -288,21 +326,29 @@ li{
 }
 
 #mini_featured{
-	width: 320px; /* 36.5625% */ 
+	width: 35.4166667%; /* 340px */ 
 	float: left;
+	margin-left: 10px;
 }
 
-#mini_featured ul{
-	display:inline
+#mini_featured h1, #view_all{
+	float: left;
 }
 
 #view_all{
 	margin: 15px 0 0 45px;
 }
 
+#coonhound, #chiweenie{
+/* 	width: 153px; */
+	float: left;
+}
+
+#mini_featured figcaption{
+	line-height: 10px;
+}
+
 #mini_featured img{
-	width: 153px;
-	clear: left;
 	border: 2px solid #555f7d;
 }
 
@@ -311,35 +357,33 @@ li{
 	border: 2px solid #8899cb;
 }
 
-#mini_featured h1, #view_all{
-	float: left;
-}
-
-#coonhound, #chiweenie{
-	width: 145px;
-	float: left;
-	margin-right: 15px;
-}
-
-/*
-#coonhound a, #chiweenie a {
-	text-decoration: none;
-}
-*/
-
 #coonhound a:hover, #chiweenie a:hover {
 	color: #00207d;
 }
 
 
 #mini_about_us{
-	width: 600px;
+	width: 54.375%; /* 522px */
 	float: left;
-	margin-left: 20px;
+	margin-left: 2.0833333%; /* 20px */
 }
 
 #mini_about_us p{
 	float:left;
+	margin-top: 10px;
+}
+
+#about_us_link{
+	float:right;
+	margin-bottom: 20px;
+}
+
+#about_us_link a{
+	text-decoration: underline;
+}
+
+#mini_about_us img{
+	margin-right: .5208333%; /* 5px */
 }
 
 #store_front{
@@ -349,19 +393,18 @@ li{
 
 #address ul{
 	float: left;
-	width: 390px;
 	margin-left: 11px;
 }
 
 #certificates{
 	float: left;
-	margin: 20px 0 0 11px;
+	margin: 20px 0 0 1.1458333%; /* 11px */
 }
 
 #certificates li{
-	width: 77px;
+	width: 8.0208333%; /* 77px */
 	float: left;
-	margin-right: 20px; 
+	margin-right: 20px; /* 2.0833333% */ 
 }
 
 #address li:nth-child(1){
@@ -371,20 +414,172 @@ li{
 #certificates li:nth-child(3){
 	margin-top: 30px;
 }
+
+/*--------------- =Puppy Gallery ---------------------*/
+
+
+figure {
+	position: relative;
+	float: left;
+	width: 200px;
+	margin: 0 35px 10px 0;
+}
+
+#featured figure img, #more_puppies figure img{
+	-moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    -khtml-border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.detailed{
+	position: absolute;
+	bottom: 5px;
+	background-color: rgba(51, 51, 51, .8);
+	color: #e1e1e1;
+	width: 213px;
+	padding-left: 10px;
+}
+
+#featured .detailed{
+	background-color: rgba(0, 32, 125, .8);
+}
+
+#more_puppies{
+	clear: left;
+}
+
+#pagination{
+	margin: 0 auto;
+	width: 285px;
+	padding: 10px 0;
+}
+
+#pagination ul {
+	overflow: hidden;
+}
+
+#pagination li {
+	float: left;
+	padding: 0 20px;
+}
+
+/*--------------- =Our Guarantee ---------------------*/
+
+#guarantee li{
+	margin-bottom: 10px;
+}
+#guarantee ul{
+	margin-left: 20px;
+	list-style-type: lower-latin;
+}
+
+#guarantee ol{
+	list-style-type: upper-roman;
+} 
+
+
+/* ------------- =Puppy Health ------------------*/
+
+#vet_header{
+
+}
+
+#vet{
+
+}
+
+#vet li{
+	float: left;
+	width: 440px; 
+}
+
+#vet ul, #vet img{
+	float: left;
+	overflow: hidden;
+}
+
+#east{
+	background-color: #e5dfe1;
+	border: 2px solid #bcb7b9;
+	padding: 0 10px;
+	margin-right: 10px;
+}
+
+#central{
+	background-color: #e5dfe1;
+	border: 2px solid #bcb7b9;
+	padding: 0 10px;
+	margin-bottom: 10px;
+}
+
+#west{
+	background-color: #e5dfe1;
+	border: 2px solid #bcb7b9;
+	padding: 0 10px;
+	margin-right: 10px;
+}
+
+#north{
+	background-color: #e5dfe1;
+	border: 2px solid #bcb7b9;
+	padding: 0 10px;
+}
+
+#vet img{
+	float: right;
+}
+
+
+/*--------------- =Client Photos ---------------------*/
+
+#gallery {
+	list-style: none;
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+#gallery li {
+	float: left;
+	margin-right: 10px;
+}
+
+#gallery img {
+	border: 3px solid #e1e1e1;
+}
+
+#gallery img:hover {
+	border: 3px solid #555F7D;
+	-moz-box-shadow: 0 0 3px 3px #555F7D;
+	-webkit-box-shadow: 0 0 3px 3px #555F7D;
+	box-shadow: 0 0 3px 3px #555F7D;
+	
+}
 /*--------------- =About Us ---------------------*/
 
 #about_us{
 	background-color: #e5dfe1;
 	border: 2px solid #bcb7b9;
-	padding: 0 7px;
+	padding: 10px 7px 10px 7px;
+	overflow: hidden;
 }
 
+#about_us p{
+	margin-bottom: 5px;
+}
 
 #about_us img{
 	border: 2px solid #555f7d;
 	float: left;
 	width: 301px;
 	margin-right: 15px;
+}
+
+iframe{
+	border: 2px solid #555f7d;
+	float: left;
+	margin-left: 15px;
 }
 
 #request{
@@ -394,8 +589,7 @@ li{
 }
 
 form{
-	background: -webkit-linear-gradient(#ddd7d9 12.25%, #e5dfe1 100%);
-	background: -moz-linear-gradient(#d8d5df 42.72%, #d8d5df 100%);
+	background-color: #E5DFE1;
 	line-height: 24px;
 	font: italic bold 1.2em "Helvetica Neue", sans-serif;
 	color: #555f7d;
@@ -405,46 +599,81 @@ form{
 	border-radius: 10px;
 	padding:10px;
 	border: 1px solid #9f9f9f;
+	overflow: hidden;
 }
 
 form li{
 	margin-bottom: 5px;
 }
 
+button{
+	float: right;
+}
+
 button.css3button {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	color: #050505;
+	color: #ffffff;
 	padding: 10px 20px;
 	background: -moz-linear-gradient(
 		top,
-		#ffffff 0%,
-		#ebebeb 50%,
-		#dbdbdb 50%,
-		#b5b5b5);
+		#2f44a1 0%,
+		#23347a);
 	background: -webkit-gradient(
 		linear, left top, left bottom, 
-		from(#ffffff),
-		color-stop(0.50, #ebebeb),
-		color-stop(0.50, #dbdbdb),
-		to(#b5b5b5));
+		from(#2f44a1),
+		to(#23347a));
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	border-radius: 10px;
-	border: 1px solid #949494;
+	border: 1px solid #213273;
 	-moz-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 2px rgba(255,255,255,1);
+		inset 0px 0px 1px rgba(255,255,255,0.5);
 	-webkit-box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 2px rgba(255,255,255,1);
+		inset 0px 0px 1px rgba(255,255,255,0.5);
 	box-shadow:
 		0px 1px 3px rgba(000,000,000,0.5),
-		inset 0px 0px 2px rgba(255,255,255,1);
+		inset 0px 0px 1px rgba(255,255,255,0.5);
 	text-shadow:
-		0px -1px 0px rgba(000,000,000,0.2),
-		0px 1px 0px rgba(255,255,255,1);
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
 }
+
+
+button.css3button:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#23347a 0%,
+		#2f44a1);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#23347a),
+		to(#2f44a1));
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: 1px solid #213273;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+
+
 
 #location{
 	width: 600px;
@@ -455,6 +684,12 @@ button.css3button {
 #location ul{
 	float: left;
 }
+
+#location li:first-child{
+text-decoration: underline;
+	
+}
+
 
 #location img{
 	float: left;
@@ -470,52 +705,6 @@ button.css3button {
 #location li:nth-child(6){
 	margin-top: 10px;
 }
-
-
-
-/*--------------- =Puppy Gallery ---------------------*/
-
-/*
-#featured li, #more_puppies li{
-	position: relative;
-	float: left;
-	width: 200px;
-}
-
-.detailed{
-	position: absolute;
-	bottom: 0;
-	width: 100%;
-	background-color: rgba(51, 51, 51, .8);
-}
-
-#featured .detailed{
-	background-color: rgba(0, 32, 125, .8);
-}
-
-#more_puppies{
-	clear: left;
-}
-
-#main_content{
-	overflow: hidden;
-}
-
-#pagination{
-	clear: both;	
-}
-
-#pagination ul{
-	width: 30%;
-	margin: 0 auto;
-}
-
-#pagination li{
-	float: left;
-	margin-right: 40px;
-}
-*/
-
 
 /*--------------- =Footer ---------------------*/
 
