@@ -53,7 +53,7 @@ body{
 
 #main_content {
 	background: #e7e7e7;
-	padding: 10px 9px; /* 9 / 960 */
+	padding: 10px .9375%; /* 9 / 960 */
 	overflow: hidden;
 }
 
@@ -70,18 +70,18 @@ body{
 /*--------------- =Banner ---------------------*/
 
 #banner{
-	padding: 10px 2.0833333%;
+	padding: 10px 2.0833333% 0;
 	background: url("http://subtlepatterns.com/patterns/lightpaperfibers.png");
 	overflow: hidden;
 }
 
 #banner_img{
-	width: 99px;
+	width: 10.3125%; /* 99px */
 	float: left;
 }
 
 #logo{
-	width: 155px;
+	width: 16.1458333%; /* 155px */
 	float: left;
 	margin-top: 50px;
 }
@@ -100,7 +100,7 @@ nav {
 	/* background: #00207e; */
 	background: #555F7D;
 	width: 100%;
-	height: 61px;
+	max-height: 61px;
 	clear: both;
 }
 
@@ -110,7 +110,7 @@ nav li {
 }
 
 nav a{
-	height: 61px;
+	min-height: 61px;
 	width: 192px; /* 20% */
 	display: block;
 	background: url(../img/nav.png) no-repeat 0 0;
@@ -127,30 +127,7 @@ nav a{
 }
 */
 
-#lower_nav{
-	margin: 0 auto;
-	width: 46.875%; /* 450px */
-	padding: 10px 0;
-}
 
-#lower_nav ul {
-	overflow: hidden;
-}
-
-#lower_nav li {
-	float: left;
-	padding: 0 10px;  /* 01.0416667% */
-	border-right: 1px solid #ffffff;
-	font-size: 1.0em;
-}
-
-#lower_nav li:last-child {
-	border: none;
-}
-
-#lower_nav a {
-	color: #ffffff;
-}
 
 /*------------------------------ Our Puppies Button */
 
@@ -259,9 +236,9 @@ h3 {
 	font-size: 1.8em;
 }
 
-h4{
+h4 {
 	font-size: 1.5em;
-	padding-bottom: 5px;
+	padding-bottom: .5208333%; /* 5px */
 	font-weight: bolder;
 }
 
@@ -275,17 +252,25 @@ a{
 	text-decoration: none;
 }
 
-a:hover{
-	color: #878579;
+a:hover {
+	color: #737b90;
 	text-decoration: underline;
 }
 
-a:active{
+a:active {
 	color: #debd5f;
 }
 
-li{
+li {
 	font: 1.2em "Helvetica Neue", sans-serif;
+}
+
+li li {
+	font: 1em "Helvetica Neue", sans-serif;
+}
+
+li li a{
+	font: 1em "Helvetica Neue", sans-serif;
 }
 
 /*--------------- =Banner ---------------------*/
@@ -328,7 +313,7 @@ li{
 #mini_featured{
 	width: 35.4166667%; /* 340px */ 
 	float: left;
-	margin-left: 10px;
+	margin-left: 1.0416667%; /* 10px; */
 }
 
 #mini_featured h1, #view_all{
@@ -336,12 +321,13 @@ li{
 }
 
 #view_all{
-	margin: 15px 0 0 45px;
+	margin: 15px 0 0 4.6875%; /* 45px */
 }
 
 #coonhound, #chiweenie{
-/* 	width: 153px; */
+	width: 45%; /* 153 */
 	float: left;
+	margin: 0;
 }
 
 #mini_featured figcaption{
@@ -363,7 +349,7 @@ li{
 
 
 #mini_about_us{
-	width: 54.375%; /* 522px */
+	width: 61.1458333%; /* 587px */ 
 	float: left;
 	margin-left: 2.0833333%; /* 20px */
 }
@@ -371,15 +357,6 @@ li{
 #mini_about_us p{
 	float:left;
 	margin-top: 10px;
-}
-
-#about_us_link{
-	float:right;
-	margin-bottom: 20px;
-}
-
-#about_us_link a{
-	text-decoration: underline;
 }
 
 #mini_about_us img{
@@ -398,13 +375,13 @@ li{
 
 #certificates{
 	float: left;
-	margin: 20px 0 0 1.1458333%; /* 11px */
+	margin: 20px 0 0 2.1072797%; /* 11px */
 }
 
 #certificates li{
-	width: 8.0208333%; /* 77px */
+	width: 77px; /* 77px */
 	float: left;
-	margin-right: 20px; /* 2.0833333% */ 
+	margin-right: 20px; /* 20px / 522px */ 
 }
 
 #address li:nth-child(1){
@@ -455,10 +432,6 @@ figure {
 	padding: 10px 0;
 }
 
-#pagination ul {
-	overflow: hidden;
-}
-
 #pagination li {
 	float: left;
 	padding: 0 20px;
@@ -466,37 +439,49 @@ figure {
 
 /*--------------- =Our Guarantee ---------------------*/
 
+#guarantee ul{
+	margin-left: 20px;
+}
+
 #guarantee li{
 	margin-bottom: 10px;
 }
-#guarantee ul{
-	margin-left: 20px;
-	list-style-type: lower-latin;
-}
+
 
 #guarantee ol{
-	list-style-type: upper-roman;
+	margin-left: 25px;
 } 
 
+.certificates{
+	float: right;
+	padding: 0 40px;
+	width: 25%;
+}
+
+.certificates li{
+	margin-bottom: 20px;
+}
+
+.certificates img{
+	width: 84.7457627%;
+}
 
 /* ------------- =Puppy Health ------------------*/
 
-#vet_header{
-
-}
-
-#vet{
-
-}
-
-#vet li{
+#vet > li{
 	float: left;
-	width: 440px; 
+	width: 440px;
+	position: relative;
 }
 
-#vet ul, #vet img{
-	float: left;
-	overflow: hidden;
+#vet ul{
+	width: 200px;
+}
+
+#vet > li > a{
+	position: absolute;
+	top: 0;
+	right: 10px;
 }
 
 #east{
@@ -533,11 +518,16 @@ figure {
 
 /*--------------- =Client Photos ---------------------*/
 
+#center{
+	overflow: hidden;
+	padding: 10px;
+}
+
 #gallery {
 	list-style: none;
 	overflow: hidden;
-	margin: 0 auto;
-	padding: 10px;
+	margin-left: 35px;
+
 }
 
 #gallery li {
@@ -572,7 +562,7 @@ figure {
 #about_us img{
 	border: 2px solid #555f7d;
 	float: left;
-	width: 301px;
+	width: 31.3541667%; /* 301px */
 	margin-right: 15px;
 }
 
@@ -584,7 +574,7 @@ iframe{
 
 #request{
 	clear: left;
-	width: 310px;
+	width: 32.2916667%; /* 310px */
 	float: left;
 }
 
@@ -676,7 +666,7 @@ button.css3button:hover {
 
 
 #location{
-	width: 600px;
+	width: 62.5%; /* 600px */
 	float: left;
 	margin-left: 30px;
 }
@@ -706,6 +696,11 @@ text-decoration: underline;
 	margin-top: 10px;
 }
 
+iframe{
+	width: 70.6666667%;
+	height: 306px;
+}
+
 /*--------------- =Footer ---------------------*/
 
 footer{
@@ -717,25 +712,129 @@ footer{
 	clear: both;
 }
 
+footer ul{
+	margin: 10px 0;
+}
+footer li{
+	display: inline;
+}
+
+footer li a {
+	color: #ffffff;
+	margin: 0 10px;
+}
+
 /* ------------- Media Queries ---------------*/
 
 @media screen and (max-width: 960px){
 
-	#wrapper{
+	nav {
+		overflow: visible;
+		background: #555F7D;
 		width: 100%;
-		}
-}
+		max-height: 61px;
+		text-align: center;
+		padding: 10px 0;
+	}
+	
+	nav li {
+		list-style: none;
+		float: none;
+		display: inline;
+		margin-right: 20px;
+		color: #ffffff;
+		padding: 10px 0;
+	}
+	
+	nav a{
+		min-height: 61px;
+		width: auto;
+		display: inline;
+		background-image: none;
+		text-indent: 0;	
+		font: 1.7em 'Fredoka One', cursive;
+		color: #ffffff;
+	}
+	
+	#featured figure:last-child{
+		display: none;
+	}
+	
+	#featured, #more_puppies{
+	width: 720px;
+	margin: 0 auto;
+	overflow: hidden;
+	}
 
-@media screen and (max-width: 600px){
-
-	#wrapper{
+	#vet > li{
+		float: none;
 		width: 100%;
 	}
+	
+	#east, #west, #central, #north{
+		margin: 0 0 10px;
+	}
+
+}
+
+@media screen and (max-width: 768px){
+
+#wrapper{
+	width: 100%;
+}
+
+#pagination{
+	margin: 0 auto;
+	width: 285px;
+	padding: 10px 0;
+}
+
+#pagination li {
+	float: left;
+	padding: 0 20px;
+}
+
+#mini_featured{
+	margin-left: 1.0416667%; /* 10px; */
+}
+
+#coonhound{
+	clear: left;
+}
+
+
+#coonhound, #chiweenie{
+	margin: 0;
+}
+	
 }
 
 @media screen and (max-width: 480px){
 
-	#wrapper{
-		width: 100%;
-	}
+#wrapper{
+	width: 100%;
+}
+
+#mini_featured{
+	width: 100%; /* 340px */
+}
+
+#mini_about_us{
+	width: 100%; /* 340px */
+}
+
+#featured figure:nth-child(2){
+		display: none;
+}
+
+#request{
+	width: 100%; /* 310px */
+	float: left;
+}
+
+#location{
+	width: 100%;
+}
+
+
 }
